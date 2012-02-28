@@ -1,14 +1,15 @@
 #pdf-controls {
 	position: fixed;
 	right: 0;
-	bottom: 2em;
-	background-color: #fff;
+	bottom: 2em; background-color : #fff;
 	margin: 0.5em 2em;
+	background-color: #fff;
 }
 
 #pdf-container {
 	width: 100%;
 }
+
 #pdf-stats p {
 	text-align: right;
 }
