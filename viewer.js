@@ -1,4 +1,5 @@
 // Incremental PDF viewer for Pdf.js
+// Author: Rigel Di Scala <zedr@zedr.com>
 
 
 function PdfViewer(url) {
