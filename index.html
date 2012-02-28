@@ -1,0 +1,37 @@
+<html>
+
+<head>
+<!-- embed the fancy pdf.js viewer -->
+<script src="pdf.js"></script>
+<script src="viewer.js"></script>
+<script type="text/javascript">
+    // Specify the main script used to create a new PDF.JS web worker.
+    PDFJS.workerSrc = 'pdf.js';
+</script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+	<div id="pdf-controls">
+		<button id="zoom_minus" onclick="mon.zoomMinus()"
+			oncontextmenu="return false;">-</button>
+		<button id="zoom_plus" onclick="mon.zoomPlus()"
+			oncontextmenu="return false;">+</button>
+		<div id="pdf-stats">
+			<p><span id="pdf-page-zoom">n/a</span>%</p>
+		</div>
+	</div>
+
+	<hr />
+
+	<!--	PDF rendering	-->
+	<div id="pdf-container">
+		<div id="pdf-viewer"></div>
+	</div>
+
+	<script>
+        var mon = new PdfReader('test.pdf');
+    </script>
+</body>
+
+</html>
